@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        .esconder {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <nav class="container navbar navbar-light" style="background-color: lightskyblue;">
+                <div class="container-fluid">
+                    <img src="imagens/imgpassport.jpg" alt="" width="300" height="100"
+                        class="d-inline-block align-text-top">
+                    <h1>Travel</h1>
+                </div>
+            </nav>
+        </div>
+        <div>
+
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6 card p-3 m-3 ">
+                    <img src="imagens/img.jpg" class="card-img-top" alt="...">
+                    <div class="card-body w-100">
+                        <h5 class="card-title">Passagens Incríveis</h5>
+                        <div id="idTelaPesquisa">
+                            <p class="card-text">Faça sua viagem dos sonhos com o melhor preço!</p>
+                            <form id="idFormulario" action="">
+
+                                <label class="form-label" for="idOrigem">Origem</label>
+                                <input class="form-control" type="text" id="idOrigem" required>
+                                <br>
+                                <label class="form-label" for="idDestino">Destino</label>
+                                <input class="form-control" type="text" id="idDestino" required>
+                                <br>
+                                <label class="form-label" for="idDate">Data de Ida</label>
+                                <input class="form-control" type="date" id="idDate" required>
+                                <br>
+                                <button class="btn btn-primary" type="button" id="btnPesquisar">Pesquisar</button>
+                            </form>
+                        </div>
+                        <div id="idDivOut" class="esconder">
+                            <output id="idOut"></output>
+                            <table class="table table-primary text-center" id="idTabela">
+                                <caption>Menor Preço</caption>
+                                <thead>
+                                    <tr>
+                                        <th id="idThPreco">Preço</th>
+                                        <th id="idThCompanhia">Companhia Aérea</th>
+                                        <th id="idThOrigem">Origem</th>
+                                        <th id="idThDestino">Destino</th>
+                                        <th id="idThEscalas">Escalas</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="idBodyTb">
+                                    <tr>
+                                        <td id="idTdPreco"></td>
+                                        <td id="idTdCompanhia"></td>
+                                        <td id="idTdOrigem"></td>
+                                        <td id="idTdDestino"></td>
+                                        <td id="idTdEscalas"></td>
+
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                            <button class="btn btn-primary" type="button" id="btnVoltar">Nova Pesquisa</button>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-3">
+
+                    </div>
+                </div>
+                <h2></h2>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
